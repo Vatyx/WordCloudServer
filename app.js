@@ -14,7 +14,7 @@ app.post("/", function(req, res) {
 });
 
 app.get("/", function(req, res) {
-	app.send("<p>" + filler + "</p>");
+	res.send("<p>" + filler + "</p>");
 });
 
 app.set('port', (process.env.PORT || 3000));
