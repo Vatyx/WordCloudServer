@@ -21,12 +21,13 @@ app.post("/", function(req, res) {
 	console.log(req.body.hello);
 	filler = req.body.hello;
 
-	getImage();
+	/*getImage();
 	myEmitter.on("done", function () {
 		console.log("in route");
 		res.json({img: "http://wordcloudapp.herokuapp.com/wordcloud"+ counter +".png"});
 		counter++;
-	});
+	});*/
+	res.json({img: "http://dummyimage.com/830x600/000/fff"})
 });
 
 app.get("/", function(req, res) {
