@@ -10,7 +10,7 @@ app.post("/", function(req, res) {
 	console.log("Oh boy in post");
 	console.log(req.body.hello);
 	filler = req.body.hello;
-	res.end();
+	res.json({img: "http://dummyimage.com/830x600/000/fff"});
 });
 
 app.get("/", function(req, res) {
